@@ -10,9 +10,6 @@ public class Main {
         HashSet<String> stringHashSet = new HashSet<>(tags);
         List<String> uniqueData = new ArrayList<>(stringHashSet.stream().toList());
         Collections.sort(uniqueData);
-        //StringBuilder stringBuilder = new StringBuilder(String.join(", ", uniqueData.toString())
-        //        .replace("[", "")
-        //        .replace("]", ""));
         String result = String.join(", ", uniqueData);
         System.out.println(result);
     }
